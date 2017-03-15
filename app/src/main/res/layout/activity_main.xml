@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.rainer.taschenrechner.MainActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <TextView
-        android:id="@+id/dividend"
+        android:id="@+id/divid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dividend:"
@@ -19,7 +19,7 @@
         tools:layout_editor_absoluteY="76dp" />
 
     <TextView
-        android:id="@+id/divisor"
+        android:id="@+id/divis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Divisor:"
@@ -33,12 +33,12 @@
         android:layout_width="220dp"
         android:layout_height="48dp"
         android:text="Dividiere"
-        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="231dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
-        android:id="@+id/output"
+        android:id="@+id/out"
         android:layout_width="88dp"
         android:layout_height="20dp"
         android:text="Output:"
@@ -53,10 +53,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="93dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.094" />
 
     <EditText
         android:id="@+id/divisor"
@@ -64,27 +64,29 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="171dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="171dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.094" />
 
     <TextView
         android:id="@+id/output"
         android:layout_width="154dp"
         android:layout_height="23dp"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="328dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.069" />
 
     <TextView
         android:id="@+id/divisionsrechner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Divisionsrechner"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.501" />
 
 </android.support.constraint.ConstraintLayout>
